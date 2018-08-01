@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+    
+    <title>RPS Mulitplayer</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row" id="header">
+            <div class="col">Rock Paper Scissors Mulitplayer</div>
+        </div>
+        <div class="row" id="nameForm">
+            <div class="col">
+                <div class="row">
+                    <div class="col">
+                        <input type="text" id="userName" placeholder="Enter your name...">
+                        <input type="submit" id="nameSubmit">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col" id="turn"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="game">
+            <div class="col-md-4" id="player1">
+                <div class="row" id="p1name"></div>
+                <button type="button" class="option btn-dark">Rock</button>
+                <button type="button" class="option btn-light">Paper</button>
+                <button type="button" class="option btn-info">Scissors</button>
+                <div class="row" id="p1stats"></div>
+            </div>
+            <div class="col-md-4">
+                <div class="row" id="outcome"></div>
+                <div class="row" id="waiting"></div>
+            </div>
+            <div class="col-md-4" id="player2">
+                <div class="row" id="p2name"></div>
+                <button type="button" class="option btn-dark">Rock</button>
+                <button type="button" class="option btn-light">Paper</button>
+                <button type="button" class="option btn-info">Scissors</button>
+                <div class="row" id="p2stats"></div>
+            </div>
+        </div>
+        <div class="row" id="chatBox">
+            <div class="col">
+                <div class="row" id="chat"></div>
+                <div class="row">
+                    <form id="chatForm">
+                        <input id="chatInput" type="text" placeholder="Type message here.."></input>
+                        <input id="chatSend" type="submit" value="Send">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="footer"></div>
+    </div>
+
+    <script src="assets/js/game.js"></script>
+</body>
+</html>

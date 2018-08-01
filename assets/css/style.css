@@ -1,0 +1,46 @@
+#header {
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+}
+
+#nameForm {
+    text-align: center;
+    padding: 10px;
+}
+
+#game {
+    padding: 20px;
+}
+
+#chatBox {
+    padding: 20px;
+    margin: auto;
+}
+
+#chatForm {
+    margin: auto;
+}
+
+.playerTurn {
+    border-color: rgb(255, 246, 121);
+    border-width: 5px;
+    border-style: solid;
+}
+
+.chatDisconnect {
+    background-color: grey;
+}
+
+.chatJoin {
+    background-color: rgb(255, 246, 121);
+}
+
+.chatP1 {
+    background-color: pink;
+}
+
+.chatP2 {
+    background-color: teal;
+}
+
