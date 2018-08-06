@@ -1,7 +1,16 @@
 #header {
     text-align: center;
-    font-size: 30px;
-    padding: 20px;
+    font-size: 50px;
+    padding: 50px;
+}
+#title1 {
+    font-family: 'Amatic SC', cursive;
+    font-style: italic;
+}
+
+#title2 {
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
 }
 
 #nameForm {
@@ -44,3 +53,13 @@
     background-color: teal;
 }
 
+.container {
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 2px;
+}
+
+#game {
+    margin: auto;
+    text-align: center;
+    position: center;
+}
